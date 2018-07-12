@@ -1,34 +1,13 @@
-<meta charset="utf-8">
+ <title>DODO | Design, Branding and Strategy Agency in Lagos, Nigeria</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="DODO is a branding, design and strategy agency in Lagos, Nigeria offering exceptional services in design, branding, UX/UI, and customer experience strategies.">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <meta name="author" content="">
-
-    <title>The Peel-dodo blog</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="{{ asset('user/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
     <link rel="shortcut icon" href="https://i.imgur.com/QcHQMmd.png">
-    <link rel="icon" type="image/png" href="./favicon.png">
-
-    <!-- Theme CSS -->
-    <link href="{{ asset('user/css/clean-blog.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('user/css/custom.css') }}" rel="stylesheet">
-    <link href="{{ asset('user/vendor/bootstrap/css/custom.scss') }}" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="{{ asset('user/vendor/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
-    <link href="{{ asset('user/vendor/bootstrap/css/custom.scss') }}" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-
-    @section('header')
-    <style>
-    .fa-thumbs-up:hover{
-        color:red;
-    }
-</style>
-
-    @show
+    <link rel="stylesheet" href="{{asset('user/css/DodoDesign.css')}}">
+    <link rel="stylesheet" href="{{ asset('user/css/font-face.css')}}">
+    <link rel="stylesheet" href="{{ asset('user/css/main.css')}}">
+    <link rel="stylesheet" href="{{ asset('user/css/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="{{ asset('user/css/jssocials.css')}}">
+    <link rel="stylesheet" href="{{ asset('user/css/jssocials-theme-flat.css')}}">

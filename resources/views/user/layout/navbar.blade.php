@@ -1,52 +1,38 @@
-<!-- Navigation -->
-<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand" href="dodo.ng">Dodo</a>
-            </div>
+        <!--navigation-->
+        <nav id="navbar">
+            <div class="navbar-wrapper">
+                <div class="container">
+                    <div class="logo">
+                        <a href="https://dodo.ng/">
+                            <img class="" src="{{ asset('user/images/dodo-logo.png')}}" alt="">
+                        </a>
+                    </div>
+                    <div class="menu-extras">
+                        <div class="menu-item">
+                            <div class="nav-toggle">
+                                <a class="menu-toggle" href="#">
+                                    <div class="hamburger">
+                                        <div class="hamburger-box">
+                                            <div class="hamburger-inner"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="https://dodo.ng/about">About Us</a>
-                    </li>
-                    <li>
-                        <a href="https://dodo.ng/work">Our Work</a>
-                    </li>
-                    <li>
-                        <a href="index.html">The Peel</a>
-                    </li>
-                    <li>
-                        <a href="https://dodo.ng/contact">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+                    <div id="navigation">
+                        <ul class="navigation-menu nav">
+                            <li class=""> <a href="https://dodo.ng/">Home</a></li>
+                            <li class="menu-item-has-children"><a href="https://dodo.ng/about">ABOUT US</a></li>
+                            <li class="menu-item-has-children"><a href="https://dodo.ng/work">OUR WORK</a> </li>
+                            <li class="menu-item-has-children"><a href="http://the-peel.dodo.ng/">THE PEEL</a> </li>
+                            <li class="menu-item-has-children"><a href="https://dodo.ng/Contact">CONTACT US</a> </li>
 
-    <!-- Page Header -->
-    <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url( @yield('bg-img'))">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="site-heading">
-                        <h1>@yield('title')</h1>
-                        <hr class="small">
-                        <span class="subheading">@yield('sub-title')</span>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
+        </nav>
+
+ 

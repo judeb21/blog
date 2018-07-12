@@ -6,17 +6,18 @@
 </head>
 
 <body>
+	<div id="wrapper">
     @include('user/layout/navbar')
     <!-- Main Content -->
+    @include('user/layout/section')
 
     @section('main-content')
 
     @show
-    
-   <hr>
-
+    @section('sidebar')
+    @show
     @include('user/layout/footer')
-    
+    </div>
 </body>
 
 </html>

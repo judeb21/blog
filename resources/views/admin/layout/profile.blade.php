@@ -9,7 +9,7 @@
 		<img src="/admin/avatars/{{$user->Adminimage}}" style="width: 150px; height: 150px; float: left; border-radius: 50%; margin-right: 25px;">
 		<h2>{{$user->name}}'s profile </h2>
 		 <form enctype="multipart/form-data" action ="/admin/profile" method="POST">
-		 	{{ csrf_field()}}
+		 	{{ csrf_field() }}
   	<label>Update profile Imae</label>
   	<input type="file" name="Adminimage">
   	<input type="hidden" name="_token "  >

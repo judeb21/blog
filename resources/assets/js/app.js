@@ -19,23 +19,4 @@ Vue.component('post', require('./components/post.vue'));
 
 const app = new Vue({
     el: '#v-for-blog',
-    data:{
-    	blog:{
-    		title:'title',
-    		subtitle:'subtitle',
-    		created_at:'created_at',
-    		image:'image'
-    	},
-    },
-    mounted()
-    {
-    	axios.post('/getPost')
-    	.then(function (response) {
-    		this.blog = response.data
-    		//console.log(response);
-    	})
-    	.catch(function (error) {
-    		console.log(error);
-    	});
-    }
 });
