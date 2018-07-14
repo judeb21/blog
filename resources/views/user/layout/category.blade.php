@@ -1,16 +1,22 @@
 @extends('user/app')
-@section('bg-image')
-<img src="{{ asset('user/images/thepeel_bg.jpg')}}">
-@endsection
 
 @section('main-content')
+ 
+        <section class="container category">
+            <div class="category-header">
+            	<h1 class="category_title h1">
+            		
+            	</h1>
+              
+            </div>
 
-<section class="grey-bg">
+        </section>
+        <section class="grey-bg">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8">
                         <div class="grid-posts-wrapper two-col">
-                          @foreach ($posts as $post)
+                        	@foreach ($posts as $post)
                             <a href="{{ route('post', $post->slug)}}"><article class="card-post">
                                 <div class="card-post-wrapper">
 
@@ -40,7 +46,6 @@
                                 </div>
                             </article></a>
                             @endforeach
-                           
                         </div>
                     </div>
                     <div class="col-md-3  col-md-offset-1 ">
@@ -55,16 +60,10 @@
                             <div class="widget">
                                 <h5>Categories</h5>
                                 <ul>
-                                    <li><a href="#">Minimum Viable DevOps</a>
+                                	@foreach ($categories as $category)
+                                    <li><a href="{{ route('category', $category->slug)}}">{{$category->name}}</a>
                                     </li>
-                                    <li><a href="#">How to Get What You Want</a>
-                                    </li>
-                                    <li><a href="#">Answering Everything</a>
-                                    </li>
-                                    <li><a href="#">Startup Rules</a>
-                                    </li>
-                                    <li><a href="#">Email Can Wait</a>
-                                    </li>
+                                    @endforeach
                                 </ul>
                             </div>
 
@@ -93,5 +92,33 @@
                 <h4><a href="">View More</a></h4>
             </div>
         </section>
+        <section class="subscribe">
+            <div class="container">
 
+                <form class="form-inline">
+                    <div class="form-group">
+
+                        <input type="email" class="form-control" id="exampleInputName2" placeholder="Email address">
+                    </div>
+
+                    <button type="submit" class="btn btn-lg">SUBSCRIBE</button>
+                </form>
+            </div>
+
+        </section>
+
+    <!-- Pager -->
+    <ul class="pager">
+        <li class="next">
+            {{ $posts->links() }}
+        </li>
+    </ul>
+</div>
+</div>
+</div>
+
+</div>
+@endsection
+@section('footer')
+<script src="{{ asset('js/app.js') }}"></script>
 @endsection

@@ -4,13 +4,13 @@ namespace App\Http\Controllers\User;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Model\User\post;
+use App\Model\user\post;
 
 class PostController extends Controller
 {
-    public function post(post $slug)
+    public function post(post $post)
     {
-        return view('user/layout/post', compact('slug'));
+        return view('user/layout/post', compact('post'));
     }
     public function getAllPosts()
     {

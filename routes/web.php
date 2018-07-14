@@ -4,10 +4,10 @@
 Route::group(['namespace' => 'User'], function(){
 Route::get('/', 'HomeController@index');
 Route::get('read', 'HomeController@read')->name('read');
-Route::get('thoughts', 'HomeController@thoughts')->name('thoughts');
-Route::get('post/{slug}', 'PostController@post')->name('post');
-Route::get('post/category/{slug}', 'HomeController@category')->name('category');
-Route::post('getPost', 'PostController@getAllPosts');
+//Route::get('thoughts', 'HomeController@thoughts')->name('thoughts');
+Route::get('post/{post}', 'PostController@post')->name('post');
+Route::get('post/category/{category}', 'HomeController@category')->name('category');
+Route::post('getPost', 'PostController@getAllPosts'); 
 });
 
 //Admin Route

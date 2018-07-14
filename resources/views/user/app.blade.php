@@ -8,13 +8,15 @@
 <body>
 	<div id="wrapper">
     @include('user/layout/navbar')
+    
+    @section('section')
+    @show
     <!-- Main Content -->
-    @include('user/layout/section')
-
     @section('main-content')
 
     @show
-    @section('sidebar')
+
+    @section('subscribe')
     @show
     @include('user/layout/footer')
     </div>

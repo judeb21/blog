@@ -90,7 +90,7 @@
             text: "Google Search Page",
             showLabel: false,
             showCount: "inside",
-            shares: ["twitter", "facebook", "googleplus", "linkedin"]
+            shares: ["twitter", "facebook", "linkedin"]
         });
     </script>
 

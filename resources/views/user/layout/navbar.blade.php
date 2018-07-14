@@ -34,5 +34,6 @@
                 </div>
             </div>
         </nav>
-
+@section('bg-image')
+@show
  
