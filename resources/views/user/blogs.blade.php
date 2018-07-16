@@ -55,16 +55,10 @@
                             <div class="widget">
                                 <h5>Categories</h5>
                                 <ul>
-                                    <li><a href="#">Minimum Viable DevOps</a>
+                                    @foreach ($categories as $category)
+                                    <li><a href="{{ route('category', $category->slug)}}">{{$category->name}}</a>
                                     </li>
-                                    <li><a href="#">How to Get What You Want</a>
-                                    </li>
-                                    <li><a href="#">Answering Everything</a>
-                                    </li>
-                                    <li><a href="#">Startup Rules</a>
-                                    </li>
-                                    <li><a href="#">Email Can Wait</a>
-                                    </li>
+                                    @endforeach
                                 </ul>
                             </div>
 

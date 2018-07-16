@@ -51,10 +51,9 @@
                             <div class="widget">
                                 <h5>Categories</h5>
                                 <ul>
-                                  @foreach($post->categories as $category)
-                                    <li><a href="#">{{ $category->name }}</a>
+                                  @foreach ($categories as $category)
+                                    <li><a href="{{ route('category', $category->slug)}}">{{$category->name}}</a>
                                     </li>
-                                    
                                     @endforeach
                                 </ul>
                             </div>

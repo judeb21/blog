@@ -9,9 +9,10 @@ use App\Model\user\category;
 
 class HomeController extends Controller
 {
-    public function index(){
+    public function index(category $category){
         $posts = post::where('status',1)->orderBy('created_at', 'DESC')->paginate(6);
-        return view('user/blogs', compact('posts'));
+        $categories = $category::all();
+        return view('user/blogs', compact('posts', 'categories'));
     }
     public function read(){
         $posts = post::where('status',1)->orderBy('created_at','DESC')->paginate(6);// use all();
